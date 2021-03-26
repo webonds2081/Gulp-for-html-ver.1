@@ -37,7 +37,7 @@ const browsers = [
     'Android >= 5',
 ]
 const browserSyncOption = {
-    proxy: 'localhost:8888/anken/professionalone',
+    proxy: 'http://127.0.0.1:5500/',
     open: true,
     watchOptions: {
         debounceDelay: 1000

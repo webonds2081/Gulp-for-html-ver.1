@@ -1,0 +1,16 @@
+@import "./function/**";
+@import "./setting/**";
+@import "./base/**";
+@import "./layout/**";
+@import "./object/**";
+
+.test {
+  padding: 10px;
+  margin: 0 auto;
+  color: #f00;
+  background-color: #fff;
+}
+
+body {
+  font-size: rem(60);
+}

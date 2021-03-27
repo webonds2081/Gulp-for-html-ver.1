@@ -16,7 +16,7 @@ const imageminPngquant = require("imagemin-pngquant");
 const imageminSvgo = require("imagemin-svgo");
 const browserSync = require("browser-sync");
 const srcPath = {
-    css: 'src/scss/**/*.scss',
+    css: 'src/sass/**/*.scss',
     js: 'src/js/**/*.js',
     img: 'src/images/**/*',
     html: './**/*.html',
@@ -37,12 +37,7 @@ const browsers = [
     'Android >= 5',
 ]
 const browserSyncOption = {
-    proxy: 'http://127.0.0.1:5500/',
-    open: true,
-    watchOptions: {
-        debounceDelay: 1000
-    },
-    reloadOnRestart: true,
+  server: "./"
 }
 const cssSass = () => {
     return src(srcPath.css)
